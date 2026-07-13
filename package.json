@@ -1,15 +1,17 @@
 {
   "name": "exam-upload-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exam upload Function App with OCR",
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
-    "@azure/storage-blob": "^12.27.0"
+    "@azure/storage-blob": "^12.27.0",
+    "@azure/ai-form-recognizer": "^4.0.0",
+    "@azure/core-auth": "^1.7.0"
   },
   "devDependencies": {},
-  "main": "src/{index.js,functions/*.js}"
+  "main": "src/functions/UploadAnswerSheet/index.js"
 }
