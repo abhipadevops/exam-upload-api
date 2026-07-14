@@ -1,5 +1,7 @@
-const { app } = require('@azure/functions');
+const { app } = require("@azure/functions");
 
 app.setup({
-    enableHttpStream: true,
+  enableHttpStream: true,
 });
+
+require("./functions/UploadAnswerSheet");
